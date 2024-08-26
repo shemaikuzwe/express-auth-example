@@ -13,7 +13,7 @@ export const SessionProvider = ({ children }) => {
 
   const getUser = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/auth/session", {
+      const res = await axios.get("https://express-auth-example-flbe.onrender.com/api/auth/session", {
         withCredentials: true,
       });
       if (res.status === 200) {
