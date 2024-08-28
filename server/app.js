@@ -16,6 +16,14 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://express-auth-example-flbe.onrender.com",
+    methods: ["GET", "POST", "DELETE", "PUT"],
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+      "Cache-Control",
+      "Expires",
+      "Pragma",
+    ],
     credentials: true,
   }),
 );
