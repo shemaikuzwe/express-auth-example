@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://express-auth-example-flbe.onrender.com",
     credentials: true,
   }),
 );
